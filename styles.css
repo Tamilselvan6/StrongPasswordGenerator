@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: white;
+}
+
+h1 {
+    margin-top: 140px;
+    background: linear-gradient(150deg, rgb(0, 255, 76), rgb(128, 255, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    width: 400px;
+    height: 40px;
+    border-radius: 2px;
+    margin-top: 40px;
+    background: white;
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 10px;
+    width: 360px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.fa-copy {
+    font-size: 20px;
+    color: rgb(1, 97, 30);
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fa-copy:hover {
+    color: rgb(0, 63, 0);
+}
+
+button {
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2px;
+    color: white;
+    background: linear-gradient(30deg, rgb(12, 74, 0), rgb(0, 158, 0));
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(0, 63, 0);
+}
+
+.fa-bolt {
+    padding-right: 5px;
+}
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 30px;
+        padding: 0 40px;
+        text-align: center;
+    }
+    .container {
+        margin-top: 68px;
+        width: 300px;
+    }
+    input {
+        width: 260px;
+    }
+}
